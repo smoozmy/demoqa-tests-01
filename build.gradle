@@ -8,8 +8,13 @@ repositories {
 
 dependencies {
     testImplementation(
-            "org.junit.jupiter:junit-jupiter:5.10.0"
+            "com.codeborne:selenide:7.12.0",
+            "org.junit.jupiter:junit-jupiter:5.10.0",
+            "org.slf4j:slf4j-simple:2.0.16",
+            "io.github.bonigarcia:webdrivermanager:5.8.0"
     )
+
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
